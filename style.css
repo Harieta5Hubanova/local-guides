@@ -5,13 +5,16 @@
 }
 
 @font-face {
-    font-family: 'Roboto-Black';
-    src:  url('fonts/Roboto-Black.ttf') format('truetype'),
-
+    font-family:"Roboto Bold";
+    src: url(fonts/Roboto-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Roboto Regular ";
+    src: url(fonts/Roboto-Regular.ttf) format("truetype");
 }
 
 body {
-    font-family: 'Roboto-Black', sans-serif; /* Use the font-family you defined */
+    font-family: 'Roboto Regular', sans-serif; /* Use the font-family you defined */
 }
 
 .container{
@@ -27,8 +30,10 @@ body {
 .container2{
     
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    
+    
+
 
 }
 .header{
