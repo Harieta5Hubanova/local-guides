@@ -48,12 +48,6 @@
     background-color: #e5e7eb;
   }
 
-/* @media (min-width: 500px){
-    .container{
-        inline-size: 100%;
-        min-block-size: 30rem;
-    }
-} */
 .testimonial-box{
     --inline: 100%;
     inline-size: var(--inline);
