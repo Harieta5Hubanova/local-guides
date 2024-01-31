@@ -1,3 +1,4 @@
+/* -------------- General Styles ----------------------------- */
 @font-face {
     font-family:"Roboto Bold";
     src: url(fonts/Roboto-Bold.ttf) format("truetype");
@@ -6,12 +7,144 @@
     font-family: "Roboto Regular ";
     src: url(fonts/Roboto-Regular.ttf) format("truetype");
 }
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .body{margin: 0;}
 
+/* -------------- Nav Bar ----------------------------------- */
 .nav{display:flex;background-color: #1F2937 ;justify-content: space-between;padding: 40px;}
 .logo{color:#F9FAF8; font-size: 24px;}
 .link1, .link2, .link3 {color: #e5e7eb;font-size: 18px;}
+
+/* -----------Hero Section --------------------------------------- */
 .hero{background-color: #1F2937 ; display: flex; align-items: center;padding: 20px;}
 .text{flex:1;padding-right: 20px;padding:20px}
 .main{color:#F9FAF8 ; font-size: 48px;font-family: "Roboto Bold";}
 .secondary{color:#e5e7eb ; font-size: 18px; font-family: "Roboto Regular";}
+
+
+/* -------------- Guides Section ------------------------ */
+
+#guides-main-container{
+
+    block-size: 35rem;
+    inline-size: 100%;
+    background-color: #fff;
+
+}
+
+/* ------Testimonial Section --------------------- */
+.container{
+    inline-size: 100%;
+    min-block-size: 35rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+  }
+
+/* @media (min-width: 500px){
+    .container{
+        inline-size: 100%;
+        min-block-size: 30rem;
+    }
+} */
+.testimonial-box{
+    --inline: 100%;
+    inline-size: var(--inline);
+    min-block-size: 80%;
+    /* margin: auto; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 5px solid steelblue; */
+    /* border-radius: 8px; */
+    position: relative;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    /* box-shadow: 0 0 5px grey; */
+/*   animation: scroll 10s linear infinite; */
+}
+
+@media (min-width: 600px){
+    .testimonial-box{
+        --inline: 40rem;
+        /* inline-size: var(--inline); */
+        block-size: 21rem;
+    }
+}
+
+.testimonial{
+    min-inline-size: 100%;
+    block-size: 100%;
+    background: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* place-items: center; */
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    /* animation: scroll 10s steps(5) infinite; */
+    animation: scroll 10s steps(5) infinite;
+    transform: translateX(calc(-100% * 1));
+    /* transform: translateX(-100%); */
+    /* animation-delay: 2s; */
+}
+
+.tes-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    padding-inline: 0.5em;
+    text-align: center;
+}
+
+/* @keyframes scroll {
+0%{
+    transform: translateX(0);
+}
+100%{
+    transform: translateX(-40rem)
+    transform: translateX(calc(-100% * 5));
+}
+} */
+
+@keyframes scroll {
+    0%,20% {
+        transform: translateX(calc(-100% * 0));
+    }
+    /* 20% {
+        transform: translateX(calc(-100% * 0));
+    } */
+    25%,40% {
+        transform: translateX(calc(-100% * 1));
+    }
+    /* 40% {
+        transform: translateX(calc(-100% * 1));
+    } */
+    45%, 60% {
+        transform: translateX(calc(-100% * 2));
+    }
+    /* 60% {
+        transform: translateX(calc(-100% * 2));
+    } */
+    65%, 80% {
+        transform: translateX(calc(-100% * 3));
+    }
+    /* 80% {
+        transform: translateX(calc(-100% * 3));
+    } */
+    85%, 100% {
+        transform: translateX(calc(-100% * 4));
+    }
+    /* 100% {
+        transform: translateX(calc(-100% * 4));
+    } */
+}
