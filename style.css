@@ -3,3 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src:  url('fonts/Roboto-Black.ttf') format('truetype'),
+
+}
+
+body {
+    font-family: 'Roboto-Black', sans-serif; /* Use the font-family you defined */
+}
+
+.container{
+    
+    display: flex;
+    justify-content: space-evenly;
+        
+        }
+.hero{
+    background-color: #1F2937;
+}
+
+.container2{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header{
+ 
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.custom-icon{
+    font-size: 24px; 
+    color: #F9FAF8; 
+      }
+
+.guide-container{
+
+display: flex;
+justify-content: space-evenly;
+
+
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+
+.image-box {
+    border: 5px solid #3882F6;
+    border-radius: 10px;
+
+}
+
+.infos{
+
+    font-size: 36px;
+    color: #1F2937;
+}
+.text-container{
+  
+    display : flex;
+    justify-content: center;
+    margin-bottom: 25px;
+   
+}
