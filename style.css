@@ -1,5 +1,16 @@
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family:"Roboto Bold";
+    src: url(fonts/Roboto-Bold.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Roboto Regular ";
+    src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+.nav{display:flex;background-color: #1F2937 ;justify-content: space-between;}
+.logo{color:#F9FAF8; font-size: 24px;}
+.link1, .link2, .link3 {color: #e5e7eb;font-size: 18px;}
+.hero{background-color: #1F2937 ; display: flex; align-items: center;}
+.text{flex:1;padding-right: 20px;}
+.main{color:#F9FAF8 ; font-size: 48px;font-family: "Roboto Bold";}
+.secondary{color:#e5e7eb ; font-size: 18px; }
