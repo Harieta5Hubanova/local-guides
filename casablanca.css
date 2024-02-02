@@ -20,9 +20,10 @@
 .link1, .link2, .link3 , .link4, .link5{color: #e5e7eb;font-size: 18px;}
 
 /* ----------------------------------------------------------- */
-
-.container{ display: flex; justify-content: center;margin-bottom: 30px;margin-top: 39px;}
+.background{ background-color: #fef6e4;   }
+.container{ display: flex; justify-content: center;margin-bottom: 30px;}
 .container2{ display: flex; justify-content: space-between; }
-h1, h2 { color: black; font-size: 24px;  }
-img { height: 200px ;  width:250px }
-p { font-size: 23px; }
+h1, h2 { color: #001858; font-size: 24px; font-family: "Roboto Regular"  }
+.mosque{ margin-top: 30px }
+img { height: 200px ;  width:250px;  }
+p { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
