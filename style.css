@@ -18,7 +18,7 @@
 /* -------------- Nav Bar ----------------------------------- */
 .nav{display:flex;background-color: #1F2937 ;justify-content: space-between;padding: 40px;}
 .logo{color:#F9FAF8; font-size: 24px;}
-.link1, .link2, .link3 {color: #e5e7eb;font-size: 18px;}
+.link1, .link2, .link3 , .link4, .link5{color: #e5e7eb;font-size: 18px;}
 
 /* -----------Hero Section --------------------------------------- */
 .hero{background-color: #1F2937 ; display: flex; align-items: center;padding: 20px;}
@@ -63,23 +63,15 @@
     --inline: 100%;
     inline-size: var(--inline);
     min-block-size: 80%;
-    /* margin: auto; */
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    /* border: 5px solid steelblue; */
-    /* border-radius: 8px; */
     position: relative;
     background-color: #e5e7eb;
     overflow: hidden;
-    /* box-shadow: 0 0 5px grey; */
-/*   animation: scroll 10s linear infinite; */
 }
 
 @media (min-width: 600px){
     .testimonial-box{
         --inline: 40rem;
-        /* inline-size: var(--inline); */
         block-size: 21rem;
     }
 }
@@ -91,14 +83,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* place-items: center; */
-    /* text-align: center; */
-    /* border: 2px solid red; */
-    /* animation: scroll 10s steps(5) infinite; */
     animation: scroll 10s steps(5) infinite;
     transform: translateX(calc(-100% * 1));
-    /* transform: translateX(-100%); */
-    /* animation-delay: 2s; */
 }
 
 .tes-text{
@@ -111,15 +97,6 @@
     text-align: center;
 }
 
-/* @keyframes scroll {
-0%{
-    transform: translateX(0);
-}
-100%{
-    transform: translateX(-40rem)
-    transform: translateX(calc(-100% * 5));
-}
-} */
 
 @keyframes scroll {
     0%,20% {
@@ -152,4 +129,79 @@
     /* 100% {
         transform: translateX(calc(-100% * 4));
     } */
+}
+
+/* ------------------------------ DUBLIN PAGE -------------------------------------- */
+
+.dublin-section{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dublin-head{
+
+    inline-size: 100%;
+    text-align: center;
+    font-family: "Roboto Bold";
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+    margin-block-start: 1rem;
+
+}
+
+.dublin-image{
+
+    inline-size: 100%;
+    block-size: 18rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px  #1F2937;
+
+}
+
+.dublin-article{
+
+    inline-size: 100%;
+    padding: 0.75em;
+    text-align: justify;
+
+}
+
+.dublin-article > p{
+
+    font-size: 18px;
+    font-family: "Roboto Regular";
+    color: #1F2937;
+    line-height: 1.5em;
+    margin-block-start: 1.5em;
+
+}
+
+@media (min-width: 550px){
+    .dublin-image{
+        block-size: 25rem;
+    }
+
+    .dublin-article{
+        inline-size: 80%;
+    }
+}
+
+@media (min-width: 700px){
+    .dublin-image{
+        inline-size: 80%;
+        block-size: 35rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .dublin-image{
+        inline-size: 70%;
+        block-size: 35rem;
+    }
 }
