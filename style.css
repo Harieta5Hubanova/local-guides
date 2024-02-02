@@ -528,6 +528,6 @@
 }
 .rotated-image {
     margin-top: 1rem;
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
     z-index: -1;
 }
