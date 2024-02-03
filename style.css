@@ -26,6 +26,7 @@
   justify-content: space-between;
   padding: 40px;
 }
+
 .logo {
   color: #f9faf8;
   font-size: 24px;
@@ -37,6 +38,11 @@
 .link5 {
   color: #e5e7eb;
   font-size: 18px;
+  text-decoration: none;
+}
+
+.selected {
+  border-bottom: 1px solid #e5e7eb;
 }
 
 @media (max-width: 500px){
@@ -88,36 +94,48 @@
   width: 100%;
   height: 800px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 .guides-avatars {
   border: 4px solid powderblue;
-  border-radius: 5px;
-  width: 70px;
-  height: 70px;
+  border-radius: 8px;
+  width: 140px;
+  aspect-ratio: 1;
+  /* height: 140px; */
 }
 .guides-avatars-image-1 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  /* height: 126px; */
+  margin: 0;
 }
 .guides-avatars-image-2 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;;
+  margin: 0;
 }
 .guides-avatars-image-3 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
 }
 .guides-avatars-image-4 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
 }
 .guides-avatars-image-5 {
-  width: 59px;
-  height: 59px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.guide-image{
+  inline-size: 80%;
+  aspect-ratio: 1;
 }
 
 /* ------Testimonial Section --------------------- */
@@ -419,12 +437,25 @@
 
 }
 
-.dublin-image{
+.dub-img-container{
 
     inline-size: 100%;
     block-size: 18rem;
     border-radius: 10px;
     box-shadow: 5px 5px 8px  #1F2937;
+    position: relative;
+
+}
+
+.dublin-image{
+
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  animation: fade 12s infinite;
 
 }
 
@@ -447,7 +478,7 @@
 }
 
 @media (min-width: 550px){
-    .dublin-image{
+  .dub-img-container{
         block-size: 25rem;
     }
 
@@ -457,18 +488,45 @@
 }
 
 @media (min-width: 700px){
-    .dublin-image{
+  .dub-img-container{
         inline-size: 80%;
         block-size: 35rem;
     }
 }
 
 @media (min-width: 1200px){
-    .dublin-image{
+  .dub-img-container{
         inline-size: 70%;
         block-size: 35rem;
     }
 }
+
+.dublin-image:nth-of-type(1){
+  animation-delay: 0s;
+  z-index: 4;
+}
+.dublin-image:nth-of-type(2){
+  z-index: 3;
+  animation-delay: 3s
+}
+.dublin-image:nth-of-type(3){
+  z-index: 2;
+  animation-delay: 6s
+}
+.dublin-image:nth-of-type(4){
+  z-index: 1;
+  animation-delay: 9s
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  33.33%, 66.66% {
+    opacity: 0;
+  }
+}
+
 /*-------MILANO PAGE-------*/
 
 .container {
@@ -535,6 +593,37 @@
     z-index: -1;
 }
 
-.gelato{
-  width: 38%;
+
+/* -------------------- CASABLANCA ---------------------------- */
+
+/* .background{ background-color: #fef6e4;   } */
+
+.container{ display: flex; justify-content: center;margin-bottom: 30px;}
+
+.container2{ display: flex; justify-content: space-between; }
+
+h1, h2 { color: #001858; font-size: 24px; font-family: "Roboto Regular"  }
+
+.mosque{ margin-top: 30px}
+
+img {  width: 30%; /* Make sure images take full width of their container */
+    height: auto; border: 2px solid #172c66 }
+p { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
+
+li  { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
+
+.footer{
+    font-family:"Roboto", sans-serif;
+    background-color: #1F2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 200px 50px 200px;
+    margin-top: 1.5rem;
+}
+
+.footerp{
+    color:#e5e7eb;
+    font-size: 20px;
 }
