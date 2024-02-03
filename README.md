@@ -1,1 +1,1 @@
-https://harieta5hubanova.github.io/local-guides/pages/milano.html
+https://harieta5hubanova.github.io/local-guides/index.html
