@@ -93,6 +93,15 @@
   font-family: "Roboto Regular";
 }
 
+@media (max-width: 700px){
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .hero > img{
+    inline-size: 100%;
+  }
+}
+
 /* -------------- Guides Section ------------------------ */
 
 #guides-main-container {
