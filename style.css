@@ -538,7 +538,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     
 }
@@ -597,4 +597,5 @@
     z-index: -1;
 }
 
-
+.gelato{width:48%
+}
