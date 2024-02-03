@@ -19,6 +19,15 @@
 .logo{color:#F9FAF8; font-size: 24px;}
 .link1, .link2, .link3 , .link4, .link5{color: #e5e7eb;font-size: 18px;}
 
+@media (max-width: 500px){
+    .nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
 /* ----------------------------------------------------------- */
 .background{ background-color: #fef6e4;   }
 .container{ display: flex; justify-content: center;margin-bottom: 30px;}
