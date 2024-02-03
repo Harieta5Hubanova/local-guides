@@ -575,7 +575,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
     
 }
@@ -584,7 +584,7 @@
     width: 48%;
     margin-top: 20px;
     margin-bottom:20px;
-    align-self:flex-start
+    align-self: flex-start;
     
 }
 
@@ -634,4 +634,5 @@
     z-index: -1;
 }
 
-
+.gelato{width:48%
+}
