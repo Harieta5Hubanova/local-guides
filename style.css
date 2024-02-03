@@ -288,6 +288,8 @@
     padding: 50px 200px 50px 200px;
 }
 
+
+
 /* sudan page styles */ 
 
 .container-sudan{
@@ -412,6 +414,8 @@
         }
     }
 }
+
+
 
 /* ------------------------------ DUBLIN PAGE -------------------------------------- */
 
@@ -594,36 +598,3 @@
 }
 
 
-/* -------------------- CASABLANCA ---------------------------- */
-
-/* .background{ background-color: #fef6e4;   } */
-
-.container{ display: flex; justify-content: center;margin-bottom: 30px;}
-
-.container2{ display: flex; justify-content: space-between; }
-
-h1, h2 { color: #001858; font-size: 24px; font-family: "Roboto Regular"  }
-
-.mosque{ margin-top: 30px}
-
-img {  width: 30%; /* Make sure images take full width of their container */
-    height: auto; border: 2px solid #172c66 }
-p { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
-
-li  { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
-
-.footer{
-    font-family:"Roboto", sans-serif;
-    background-color: #1F2937;
-    color: #e5e7eb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 200px 50px 200px;
-    margin-top: 1.5rem;
-}
-
-.footerp{
-    color:#e5e7eb;
-    font-size: 20px;
-}
