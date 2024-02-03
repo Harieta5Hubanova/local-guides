@@ -504,12 +504,15 @@
     align-items: flex-start;
     margin: 30px;
     isolation: isolate;
+    font-family: "Roboto Regular";
 }
 .all-right{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 30px;
+    margin-left: 150px;
+    font-family: "Roboto Regular";
+    
     
 }
 
@@ -530,4 +533,8 @@
     margin-top: 1rem;
     transform: rotate(-35deg);
     z-index: -1;
+}
+
+.gelato{
+  width: 38%;
 }
