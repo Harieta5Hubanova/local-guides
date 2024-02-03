@@ -35,7 +35,7 @@
 .container2{ display: flex; justify-content: space-between; }
 h1, h2 { color: #001858; font-size: 24px; font-family: "Roboto Regular"  }
 .mosque{ margin-top: 30px}
-img {  width: 30%; /* Make sure images take full width of their container */
+img {  width: 30%; 
     height: auto; border: 2px solid #172c66 }
 p { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
 li  { font-size: 23px; font-family: "Roboto Regular"; color:#172c66  }
