@@ -575,7 +575,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     
 }
@@ -652,3 +652,6 @@
 .book-tour-button-Harieta button:hover {
   background-color: #1F65D6; 
 }
+
+
+/* ------------------ SINGAPORE SECTION ------------------ */
