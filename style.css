@@ -26,9 +26,11 @@
   justify-content: space-between;
   padding: 40px;
 }
+
 .logo {
   color: #f9faf8;
   font-size: 24px;
+  text-decoration: none;
 }
 .link1,
 .link2,
@@ -37,6 +39,15 @@
 .link5 {
   color: #e5e7eb;
   font-size: 18px;
+  text-decoration: none;
+}
+
+.nav > a:not(:nth-of-type(1)):hover{
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.selected {
+  border-bottom: 1px solid #e5e7eb;
 }
 
 @media (max-width: 500px){
@@ -82,42 +93,90 @@
   font-family: "Roboto Regular";
 }
 
+@media (max-width: 700px){
+  .hero{
+    flex-direction: column-reverse;
+  }
+  .hero > img{
+    inline-size: 100%;
+  }
+}
+
 /* -------------- Guides Section ------------------------ */
 
 #guides-main-container {
   width: 100%;
-  height: 800px;
+  min-height: 600px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+} 
+
+.guides-header{
+
+  font-family: "Roboto-Bold";
+  color: #1F2937;
+  font-size: 36px;
+  margin-top: 1.5rem;
+
+}
+
+.guides {
+  inline-size: 100%;
+  block-size: 80%;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 2rem;
 }
+
 .guides-avatars {
-  border: 4px solid powderblue;
-  border-radius: 5px;
-  width: 70px;
-  height: 70px;
+  width: 140px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
 }
 .guides-avatars-image-1 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
 }
 .guides-avatars-image-2 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;;
+  margin: 0;
 }
 .guides-avatars-image-3 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
 }
 .guides-avatars-image-4 {
-  width: 62px;
-  height: 62px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
 }
 .guides-avatars-image-5 {
-  width: 59px;
-  height: 59px;
+  width: 200px;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.guide-image{
+  inline-size: 100%;
+  aspect-ratio: 1;
+  border: 4px solid #3882F6;
+  border-radius: 8px;
+}
+
+.guides:has(.guides-avatars:hover) > .guides-avatars:not(:hover){
+  opacity: 0.3;
 }
 
 /* ------Testimonial Section --------------------- */
@@ -175,37 +234,22 @@
   20% {
     transform: translateX(calc(-100% * 0));
   }
-  /* 20% {
-        transform: translateX(calc(-100% * 0));
-    } */
   25%,
   40% {
     transform: translateX(calc(-100% * 1));
   }
-  /* 40% {
-        transform: translateX(calc(-100% * 1));
-    } */
   45%,
   60% {
     transform: translateX(calc(-100% * 2));
   }
-  /* 60% {
-        transform: translateX(calc(-100% * 2));
-    } */
   65%,
   80% {
     transform: translateX(calc(-100% * 3));
   }
-  /* 80% {
-        transform: translateX(calc(-100% * 3));
-    } */
   85%,
   100% {
     transform: translateX(calc(-100% * 4));
   }
-  /* 100% {
-        transform: translateX(calc(-100% * 4));
-    } */
 }
 
 /* call to action section */ 
@@ -270,6 +314,8 @@
     padding: 50px 200px 50px 200px;
 }
 
+
+
 /* sudan page styles */ 
 
 .container-sudan{
@@ -279,12 +325,12 @@
 
 
     h1{
-        font-size: 36px;
-        font-weight: bold;
+        font-size: 46px;
+        font-weight: 800;
         margin-bottom: 20px;
 
         span{
-            color: #cd404c
+            color: #ff5d5d
         }
     }
 
@@ -318,8 +364,9 @@
             cursor: pointer;
 
             &:hover{
-                background-color: #303030;
+                background-color: #000000;
                 color: #e5e7eb;
+                transition: 0.5s;
             }
         }
     }
@@ -327,8 +374,9 @@
     .picture-grid{
         display: flex;
         flex-direction: row;
-        gap: 5px;
+        gap: 2px;
         margin-bottom: 40px;
+        column-gap: 2px;
 
 
 
@@ -336,15 +384,35 @@
             max-width: 100%;
             width: 700px;
             height: auto;
+            opacity:1.0;
+            filter:alpha(opacity=100); 
+            
             
             &:hover{
                 cursor: pointer;
+                opacity:0.7;
+                filter:alpha(opacity=40);
+                transition: 0.5s;
             }
         }
+        .grid-item-1{
+          border-radius: 10px 0px 0px 0px;
+        }
+        .grid-item-2{
+          border-radius: 0px 0px 0px 10px;
+        }
+        .grid-item-3{
+          border-radius: 0px 10px 0px 0px;
+        }
+        .grid-item-4{
+          border-radius: 0px 0px 10px 0px;
+        }
+        
 
-        @media(max-width: 1200px){
+        @media(max-width: 850px){
             flex-direction: column;
         }
+
     }
 
     .about-sudan{
@@ -362,6 +430,17 @@
             max-width: 600px;
             line-height: 22px;
         }
+
+        @media(max-width: 850px){
+          h2{
+            font-size: 25px;
+            margin-bottom: 5px;
+          }
+          p{
+            font-size: 25/1.161px;
+            max-width: 600px;
+          }
+      }
 
         .review{
             display: flex;
@@ -391,9 +470,15 @@
             flex-direction: column;
             gap: 30px;
             align-items: flex-start;
+            p{
+              font-size: 25/1.161px;
+              max-width: 600px;
+            }
         }
     }
 }
+
+
 
 /* ------------------------------ DUBLIN PAGE -------------------------------------- */
 
@@ -419,12 +504,25 @@
 
 }
 
-.dublin-image{
+.dub-img-container{
 
     inline-size: 100%;
     block-size: 18rem;
     border-radius: 10px;
     box-shadow: 5px 5px 8px  #1F2937;
+    position: relative;
+
+}
+
+.dublin-image{
+
+  inline-size: 100%;
+  block-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  animation: fade 12s infinite;
 
 }
 
@@ -447,7 +545,7 @@
 }
 
 @media (min-width: 550px){
-    .dublin-image{
+  .dub-img-container{
         block-size: 25rem;
     }
 
@@ -457,84 +555,153 @@
 }
 
 @media (min-width: 700px){
-    .dublin-image{
+  .dub-img-container{
         inline-size: 80%;
         block-size: 35rem;
     }
 }
 
 @media (min-width: 1200px){
-    .dublin-image{
+  .dub-img-container{
         inline-size: 70%;
         block-size: 35rem;
     }
 }
+
+.dublin-image:nth-of-type(1){
+  animation-delay: 0s;
+  z-index: 4;
+}
+.dublin-image:nth-of-type(2){
+  z-index: 3;
+  animation-delay: 3s
+}
+.dublin-image:nth-of-type(3){
+  z-index: 2;
+  animation-delay: 6s
+}
+.dublin-image:nth-of-type(4){
+  z-index: 1;
+  animation-delay: 9s
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  33.33%, 66.66% {
+    opacity: 0;
+  }
+}
+
 /*-------MILANO PAGE-------*/
 
 .container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  
 }
 
 .left-box{
-    width: 48%;
-    margin-top: 20px;
-    margin-bottom:20px;
-    align-self: center;
-    
+  width: 60%;
+  margin-top: 20px;
+  margin-bottom:20px;
+  padding-left: 20px;
+  align-self: center;
+  
 }
 
 .left-box:nth-of-type(1){
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .right-box{
-    width: 48%;
-    margin-bottom:20px;
+  width: 48%;
+  margin-bottom:20px;
 }
 .all-left{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 30px;
-    isolation: isolate;
-    font-family: "Roboto Regular";
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  isolation: isolate;
+  font-family: "Roboto Regular";
 }
 .all-right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 150px;
-    font-family: "Roboto Regular";
-    
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 150px;
+  font-family: "Roboto Regular";
+  
+  
 }
 
 .gallery {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
 .gallery img {
-    width: 50%;
-    height: auto;
-    margin: 10px;
+  width: 38%;
+  height: auto;
+  margin: 10px;
+  transition:transform 0.3 ease;
+}
+.gallery img:hover{
+  transform:scale(1.2)
 }
 .rotated-image {
-    margin-top: 1rem;
-    transform: rotate(-35deg);
-    z-index: -1;
+  margin-top: 1rem;
+  transform: rotate(-35deg);
+  z-index: -1;
 }
 
-.gelato{
-  width: 38%;
+.gelato{width:38%
+}
+
+.arrow{width: 80px;}
+
+.book-tour-button-Harieta button {
+padding: 10px 20px;
+font-size: 16px;
+background-color: #3882F6; 
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-family: "Roboto Regular";
+
+}
+
+.book-tour-button-Harieta button:hover {
+background-color: #1F65D6; 
+}
+
+.book-tour-button-Harieta figcaption {
+display: inline; /* or display: inline; */
+vertical-align:sub; 
+margin-left: 10px; 
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+/* ------------------ SINGAPORE SECTION ------------------ */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:100
 }
