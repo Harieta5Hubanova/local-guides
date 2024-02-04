@@ -4,8 +4,12 @@
   src: url(fonts/Roboto-Bold.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Roboto Regular ";
+  font-family: "Roboto Regular";
   src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto Italic";
+  src: url(fonts/Roboto-LightItalic.ttf) format("truetype");
 }
 
 *,
@@ -219,7 +223,7 @@
 
 
 .tes-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Italic", sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 36px;
@@ -612,6 +616,7 @@
   margin-bottom:20px;
   padding-left: 20px;
   align-self: center;
+  font-family: "Roboto Regular";
   
 }
 
@@ -630,7 +635,7 @@
   align-items: center;
   margin: 30px;
   isolation: isolate;
-  font-family: "Roboto Regular";
+  
 }
 .all-right{
   display: flex;
