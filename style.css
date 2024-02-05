@@ -24,6 +24,12 @@
 }
 
 /* -------------- Nav Bar ----------------------------------- */
+.header{
+  position:sticky;
+  top:0;
+  z-index:100
+}
+
 .nav {
   display: flex;
   background-color: #1f2937;
@@ -35,6 +41,7 @@
   color: #f9faf8;
   font-size: 24px;
   text-decoration: none;
+  font-family: "Roboto Regular";
 }
 .link1,
 .link2,
@@ -44,6 +51,7 @@
   color: #e5e7eb;
   font-size: 18px;
   text-decoration: none;
+  font-family: "Roboto Regular";
 }
 
 .nav > a:not(:nth-of-type(1)):hover{
@@ -685,8 +693,3 @@ button:hover {
 
 /* ------------------ SINGAPORE SECTION ------------------ */
 
-.header{
-  position:sticky;
-  top:0;
-  z-index:100
-}
