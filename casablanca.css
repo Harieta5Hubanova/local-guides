@@ -121,7 +121,10 @@ main section ul {
 
 */
 
-main section li {
+main section  {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   color: black;
   font-size: 18px;
   font-family: "Roboto Regular";
@@ -130,6 +133,16 @@ main section li {
 
 main section li:first-child {
   margin-top: 10px;
+}
+
+
+@media (min-width: 1535px){
+  main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
 }
 
 
