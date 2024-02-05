@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Regular"
+    
+}
+.top-image-container {
+    text-align: center;
+
+}
+
+.top-image {
+    width: 800px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+.container-Milano{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    position: relative;
+    z-index: 0; 
+    padding:20px;
+    margin:0;
+}
+
+
+
+
+.left-column, .right-column, .left-middle-column, .right-middle-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing:border-box;
+}
+
+.box {
+    margin-bottom: 20px;
+    font-family: "Roboto Regular";
+    padding: 10px;
+    
+   
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+.image:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px 5px #3882f6;
+}
+
+.book-button {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 16px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/*-------MILANO OLD PAGE-------*/
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: flex-start;
+    padding: 20px;
+    
+  }
+  
+  .left-box{
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding-left: 20px;
+    align-self: center;
+    font-family: "Roboto Regular";
+    
+  }
+  
+  .left-box:nth-of-type(1){
+    margin-top: 70px;
+  }
+  
+  .right-box{
+    width: 48%;
+    margin-bottom:20px;
+  }
+  .all-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    isolation: isolate;
+    
+  }
+  .all-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 150px;
+    font-family: "Roboto Regular";
+    
+    
+  }
+  
+  .gallery {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .gallery img {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    transition:transform 0.3 ease;
+  }
+  .gallery img:hover{
+    transform:scale(1.2)
+  }
+  .rotated-image {
+    margin-top: 1rem;
+    transform: rotate(-35deg);
+    z-index: -1;
+  }
+  
+  .gelato{width:38%
+  }
+  
+  .arrow{width: 80px;}
+  
+  .book-tour-button-Harieta button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3882F6; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto Regular";
+  
+  }
+  
+  .book-tour-button-Harieta button:hover {
+  background-color: #1F65D6; 
+  }
+  
+  .book-tour-button-Harieta figcaption {
+  display: inline; /* or display: inline; */
+  vertical-align:sub; 
+  margin-left: 10px; 
+  justify-content: center;
+  align-items: center;
+  
+  }
+  
+  
+
+
+
+
+
