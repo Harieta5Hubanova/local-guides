@@ -332,7 +332,7 @@
 
 .container-sudan{
     padding: 100px ;
-    font-family: "Roboto", sans-serif;
+    
     
 
 
@@ -340,6 +340,7 @@
         font-size: 46px;
         font-weight: 800;
         margin-bottom: 20px;
+        font-family: "Roboto bold";
 
         span{
             color: #ff5d5d
@@ -432,6 +433,9 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        
+        
+
 
         h2{
             margin-bottom: 10px ;
@@ -441,7 +445,10 @@
             font-size: 36/1.161px;
             max-width: 600px;
             line-height: 22px;
+            font-family: "Roboto regular";
+            margin-bottom: 20px;
         }
+
 
         @media(max-width: 850px){
           h2{
