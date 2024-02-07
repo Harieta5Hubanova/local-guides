@@ -712,3 +712,20 @@ button:hover {
 .cas-sec li:first-child {
   margin-top: 10px;
 }
+
+/* --------- SINGAPORE ------------- */
+
+.tourist-attractions {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  border: 2px solid gold;
+  width: 430px;
+  height: 220px;
+}
+section.touristy-places {
+  padding: 20px;
+  margin: 10px;
+}
